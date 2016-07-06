@@ -83,4 +83,4 @@ def compute():
             negative.append(tweets[i])
             nw+=(confidence[i]-0.5)
     if pw+nw>0:
-        satisfaction=(pw/(pw+nw))*100
+        satisfaction=int((pw/(pw+nw))*100)

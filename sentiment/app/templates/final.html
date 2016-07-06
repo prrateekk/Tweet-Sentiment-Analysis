@@ -2,26 +2,52 @@
 
 <head>
 <title>Results</title>
+
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
+
+
 </head>
 
+<style>
+
+body{
+  margin:20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+li{
+  margin:10px 0;
+}
+
+#box{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+</style>
+
 <body>
-  Tweet Positivity:{{satisfaction}}<br>
 
-  <br>
-  Positive
-  <br>
-  {% for i in pos %}
-    <li>{{i}}</li>
-  {% endfor %}
+  <center><h2><b>Analysis Result</b></h2></center>
 
-  <br>
-  Negative
-  <br>
+  <div id='box'>
+    <center><b>Tweet Positivity: {{satisfaction}}%</b><br></center>
 
-  {% for i in neg %}
-    <li>{{i}}</li>
-  {% endfor %}
+    <br>
+    <b>Positive Tweets</b>
+    <br>
+    {% for i in pos %}
+      <li>{{i}}</li>
+    {% endfor %}
 
+    <br>
+    <b>Negative Tweets</b>
+    <br>
+
+    {% for i in neg %}
+      <li>{{i}}</li>
+    {% endfor %}
+  </div>
 
 </body>
 
