@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<title>Results</title>
+</head>
+
+<body>
+  Tweet Positivity:{{satisfaction}}<br>
+
+  <br>
+  Positive
+  <br>
+  {% for i in pos %}
+    <li>{{i}}</li>
+  {% endfor %}
+
+  <br>
+  Negative
+  <br>
+
+  {% for i in neg %}
+    <li>{{i}}</li>
+  {% endfor %}
+
+
+</body>
+
+</html>
